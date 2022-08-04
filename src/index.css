@@ -93,6 +93,7 @@ button:active {
   bottom: 0;
   left: 0;
   background-color: #deebf8;
+  z-index: -10;
 }
 
 .app::after {
@@ -407,6 +408,14 @@ button:active {
 }
 
 @media (max-width: 480px) {
+  .app::before {
+    height: 40px;
+    width: 40px;
+  }
+  .app::after {
+    height: 40px;
+    width: 40px;
+  }
   .customize-container {
     height: 100%;
     min-width: 100%;
